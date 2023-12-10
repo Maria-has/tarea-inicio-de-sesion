@@ -3,7 +3,7 @@
 {% block main %}
 <h1>タスク削除ページ</h1>
 <p>
-  <strong>Título:</strong>
+  <strong>タイトル:</strong>
   {{task.title}}
 </p>
 
@@ -13,7 +13,7 @@
 </p>
 <form action="{% url 'tasks:delete' task.id %}" method="post">
   {% csrf_token %}
-  <input type="submit" value="delete">
+  <input type="submit" value="削除">
 </form>
 
 <br>
